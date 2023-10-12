@@ -1,0 +1,7 @@
+nav {
+    background-color: #d988b9;
+    padding: 10px
+}
+nav a{color: #d8b4f8;}
+nav a:hover {background-color: #caedff}
+nav {margin-bottom: 30px;}
