@@ -10,6 +10,7 @@ nav {background-color: #add8e6;
     border: 2px solid #000000;
 }
 
-@media only screen and (max-width: 100%) {
-    nav {display: none;}
+@media only screen and (max-width: 600px) {
+    nav a {display: block;}
+    nav a {display: 100%;}
 }
