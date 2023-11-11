@@ -2,8 +2,8 @@ body {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucid
 h1, h2 {color:blue}
 .special {color: blueviolet;}
 .evenrow {background-color: blueviolet;}
-h1 {font-size: 1em;}
-h2 {font-size: .3em;}
+h1 {font-size: 30px;}
+h2 {font-size: 25px;}
 nav {background-color: #add8e6;
     padding: 10px;
     margin-bottom: 30px;
@@ -13,4 +13,17 @@ nav {background-color: #add8e6;
 @media only screen and (max-width: 600px) {
     nav a {display: block;}
     nav a {display: 100%;}
+}
+
+.skip {
+    background-color: #5f5fe7;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: -999px;
+}
+.skip:focus {
+    left: 10px;
 }

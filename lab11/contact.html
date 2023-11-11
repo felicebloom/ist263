@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
     <style>
         .row1 {display: flex; margin: 30px; flex-wrap: wrap;}
         .row2 {display: flex; margin: 30px; flex-wrap: wrap;}
@@ -16,13 +16,27 @@
 
         .linkedin {max-width: 100%; flex-wrap: wrap;}
 
+        .skip {
+                background-color: rgb(157, 158, 169);
+                padding: 5px;
+                border: 1px solid #000000;
+                text-decoration: none;
+                position: absolute;
+                top: 10px;
+                left: -999px;
+             }
+             .skip:focus {
+                left: 10px;
+             }
+
     </style>
 </head>
 <body>
     <nav>
-        <a href="https://felicebloom.github.io/ist263/lab10/index.html">Home</a>
-        <a href="https://felicebloom.github.io/ist263/lab10/skills.html">Skills</a>
-        <a href="https://felicebloom.github.io/ist263/lab10/contact.html">Contact</a>
+        <a href="#main" tabindex="1" class="skip">Skip to Contont</a> <br>
+        <a href="https://felicebloom.github.io/ist263/lab11/index.html" alt="click here for home">Home</a>
+        <a href="https://felicebloom.github.io/ist263/lab11/skills.html" alt="click here for skills">Skills</a>
+        <a href="https://felicebloom.github.io/ist263/lab11/contact.html" alt="click here for contat page">Contact</a>
     </nav>
     <div class="row1">
         <div> <h1>
@@ -32,7 +46,7 @@
             Felice Bloom <br>
             751 Comstock Ave
         </h2></div>
-        <div><a href="http://www.linkedin.com/in/felice-bloom">My Linkedin Profile</a> <br>
+        <div><a href="http://www.linkedin.com/in/felice-bloom" alt="click here for linkedin">My Linkedin Profile</a> <br>
             <a href="mailto:fobloom@syr.edu">Felice Bloom Email</a> <br>
             <a href="http://www.linkedin.com/in/felice-bloom"><img src="..//images/linkedin.png" alt="linkedin logo" class="linkedin"></a> <br></div>
     </div>

@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Skills</title>
+        <link rel="stylesheet" href="style.css">
         <style>
             table, th, td {border: 1px solid black}
             .flexcentering {
@@ -24,22 +25,36 @@
                 flex: 1;
             }
             .flex2 {display: flex;}
-            .hi {padding: 10px}
+            .h1 {padding: 10px}
+
+            .skip {
+                background-color: rgb(157, 158, 169);
+                padding: 5px;
+                border: 1px solid #000000;
+                text-decoration: none;
+                position: absolute;
+                top: 10px;
+                left: -999px;
+             }
+             .skip:focus {
+                left: 10px;
+             }
             
         </style>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav>
-            <a href="https://felicebloom.github.io/ist263/lab10/index.html">Home</a>
-            <a href="https://felicebloom.github.io/ist263/lab10/skills.html">Skills</a>
-            <a href="https://felicebloom.github.io/ist263/lab10/contact.html">Contact</a>
+            <a href="#main" tabindex="1" class="skip">Skip to Content</a> <br>
+            <a href="https://felicebloom.github.io/ist263/lab10/index.html" alt="click here for home">Home</a>
+            <a href="https://felicebloom.github.io/ist263/lab10/skills.html" alt="click here for skills">Skills</a>
+            <a href="https://felicebloom.github.io/ist263/lab10/contact.html" alt="click here for contat page">Contact</a>
         </nav>
         
         
     <div class="flexcentering">
         <h1>Technical Skills</h1>
-        </div>
+    </div>
         <p class="hi">I am a sophmore at Syracuse University. Majoring in Innovation, Society, and Technology. Below are my core skills. </p> <br>
     
     <div class="flex2">
