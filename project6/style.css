@@ -36,9 +36,6 @@ body {
 .centerP {
     text-align: center;
 }
-.small {
-    text-align: right;
-}
 
 /* this is the bottom of my page */
 .bottom {
@@ -51,11 +48,12 @@ body {
     font-size: 30px;
 }
 .img2 {
-    width: 260px; 
-    height: 180px; 
+    width: 350px; 
+    height: auto; 
     flex: 1;  
     margin: 10px; 
 }
 .bottomright {
     flex: 1;
+    font-size: 30px;
 }
