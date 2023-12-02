@@ -1,0 +1,27 @@
+.nav {
+    text-align: center;
+    padding: 50px;
+}
+
+body {
+    background-color: #c6d2e9;
+    font-family: sans-serif;
+    font-size: 20px;
+} 
+
+.title {
+    text-align: center;
+}
+
+.first {
+    display: flex;
+}
+.reduce {
+    flex: 2;
+    width: 500px;
+    height: 300px;
+}
+.reducetext {
+    flex: 1;
+    padding: 20px;
+}
