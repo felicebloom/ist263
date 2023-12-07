@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription list</title>
+</head>
+<style>
+    h1 {font-family: 'Dancing Script', cursive;}
+    #modal {display: none;}
+</style>
+<script>
+    function openModal () {
+        document.getElementById("modal").style.display = 'block';
+    }
+    function closeModal () {
+        document.getElementById("modal").style.display = 'none';
+    }
+</script>
+<body>
+    <h1 onclick="openModal();" >Join Subscription List</h1>
+    <div id="modal">
+        <p id="modalclose" onclick="closeModal();">X</p>
+        <form>
+            <label for="name" >Name:</label> <br>
+            <input type="text" id="name" name="name"> <br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email"> <br>
+            <input type="submit" class="button" value="Subscribe"> <br>
+        </form>
+    </div>
+</body>
+</html>
