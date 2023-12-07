@@ -1,0 +1,61 @@
+ 
+ .nav {
+    text-align: center;
+    padding: 50px;
+}
+
+
+body {
+    background-color: #c6d2e9;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+
+} 
+
+/* this is my title and banner */
+.title {
+    position: relative;
+    text-align: center;
+}
+.titleimg {
+    width: 50%;
+    height: auto;
+}
+.titletext {
+    text-align: center;
+}
+
+.text1 {
+    text-align: center;
+}
+.steps {
+    display:flex; padding: 10px;
+    border: 2px solid #000000;
+    background-color: #72b9b9;
+}
+.centerP {
+    text-align: center;
+}
+
+/* this is the bottom of my page */
+.bottom {
+    display: flex;
+    padding: 80px;
+    text-align: center;
+}
+.danger {
+    flex: 1;
+    font-size: 30px;
+}
+.img2 {
+    width: 350px; 
+    height: auto; 
+    flex: 1;  
+    margin: 10px; 
+}
+.bottomright {
+    flex: 1;
+    font-size: 30px;
+}
