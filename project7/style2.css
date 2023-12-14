@@ -2,6 +2,52 @@
     text-align: center;
     padding: 50px;
 }
+.skip {
+    background-color: #ffbf00;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: -999px;
+}
+.skip:focus {
+    left: 10px;
+}
+
+
+.dropbtn {
+    background-color: #3498DB;
+    color: #ffffff;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+.dropdown-content a {
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content a:hover {background-color: #ddd;}
+.show {display: block;}
 
 body {
     background-color: #c6d2e9;
@@ -15,13 +61,173 @@ body {
 
 .first {
     display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border: 1px solid #efefef;
+    margin: 20px;
 }
 .reduce {
-    flex: 2;
+    padding: 20px; 
+    background-color: #efefef;
     width: 500px;
     height: auto;
+    border-radius: 8px;
 }
 .reducetext {
-    flex: 1;
+    max-width: 600px;
+    padding: 30px; 
+    justify-content: space-between;
+    background-color: #efefef;
+}
+
+@media (max-width: 780px) {
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reducetext {
+        max-width: 100%;
+    }
+    .reduce {
+        max-width: 300px;
+    }
+    .two {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .animaltest1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/* first part */
+
+
+.one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+}
+
+.cleanuptxt2 {
+    flex-basis: 100%; 
+    padding: 20px; 
+    background-color: #acb2d2;
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.cleanupimg {
+    flex-basis: 100%; 
+    padding: 20px; 
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin: 10px;
+}
+.cleanuptxt {
+    flex-basis: 100%; 
+    background-color: #acb2d2;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* this is the end of this par */
+
+.two {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+.two div {
+    margin: 10px;
+}
+.two img {
+    max-width: 100%;
+    border-radius: 8px; 
+    margin-right: 20px; 
+}
+.two a {
+    color: #007BFF; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+.two a:hover {
+    text-decoration: underline;
+}
+/* this is the end of this part */
+
+h1 {
+    color: #333333;
+    margin: 20px;
+}
+.animaltest1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+.animaltest1 div {
+    flex-basis: 50%;
+    margin: 10px;
+}
+.animaltest1 img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+p {
+    text-align: justify;
+    color: #555555;
     padding: 20px;
 }
+
+/* end of this section */
+
+.goodbadproducts {
+    max-width: 800;
+    margin: 50px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.badproducts  {
+    flex: 1;
+    margin: 20px;
+}
+
+.goodproduct {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.animaltstimg {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .badproducts {
+        margin: 20px; 
+    }
+    .goodbadproducts {
+        flex-direction: row;
+    }
+
+    }

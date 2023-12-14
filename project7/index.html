@@ -5,35 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="style.css">
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </head>
 <body>
     <nav class="nav">
-        <a href="..//project7/index.html" class="home">Home</a>
-        <a href="..//project7/second.html" class="second">You Have The Power To Make A Change!</a>
-        <a href="..//project7/third.html" class="third" >Wild Life Today</a>
+        <a href="#main" tabindex="1" class="skip">Skip to Content</a> <br>
+        <button onclick="myFunction()" class="dropbtn">Navigation</button>
+        <div id="myDropdown" class="dropdown-content">
+        <a href="..//project7/index.html">Home</a>
+        <a href="..//project7/second.html">You Have The Power To Make A Change!</a>
+        <a href="..//project7/third.html">Wild Life Today</a>
+        </div>
     </nav>
    
     <div class="title"> 
         <div class="titletext">
-            <h1>Learn, Engage, Transform: Be a Wildlife Advocate Today!</h1>
+            <h1 id="main">Learn, Engage, Transform: Be a Wildlife Advocate Today!</h1>
         </div>
-        <div>
-            <img src="..//images/finwhale.jpeg" class="titleimg" alt="fin whale">
-        </div>
+        
+    </div>
+
+    <div centerpflex>
         <div class="centerP">
             <p>Do you care for the wildlife and want to help all the animals that go extinct daily? We don’t realize that little steps we make can make a huge change in the wildlife!</p>
             <p>According to The National Wildlife Federation conserving wildlife can ensure that the future generations enjoy the “natural world”</p>
         </div> 
-    </div>
-    
-    
-    <div class="steps">
-        <div>
-            <h1>You can take the steps to perserve wildlife!</h1>
-        </div>
-        <div>
-            <p class="small">Taking small changes in our day-to-day life can tremendously help. Helping our environment stay clean and providing more like signing petitions and helping with local clean ups. Humans are the reason many animals today are going extinct. When animals go extinct it can cause a damaged populations of plants or animals. </p>
-        </div>
+       
+       
     </div>
 
     <div class="bottom">
@@ -47,8 +61,23 @@
             Crested caracara <br>
             Leatherback sea turtle <br>
         </div>
-        <div><img src="..//images/polarbears.jpg" class="img2" alt="polar bears"></div>
-        <div class="bottomright">There are so many more animals in danger other than this list. Click here to read more about animals in danger and to sign petitions to help!</div>
+        <div>
+            <img src="..//images/polarbears.jpg" class="img2" alt="polar bears">
+        </div>
+        <div class="bottomright">
+            There are so many more animals in danger other than this list. Click here to read more about animals in danger and to sign petitions to help!
+        </div>
+    </div>
+    <div class="steps">
+        <div>
+            <h1>You can take the steps to perserve wildlife!</h1>
+        </div>
+    <div>
+        <img src="..//images/finwhale.jpeg" class="titleimg" alt="fin whale">
+    </div>
+    <div>
+        <p class="small">Taking small changes in our day-to-day life can tremendously help. Helping our environment stay clean and providing more like signing petitions and helping with local clean ups. Humans are the reason many animals today are going extinct. When animals go extinct it can cause a damaged populations of plants or animals. </p>
+    </div>
     </div>
 </body>
 </html>

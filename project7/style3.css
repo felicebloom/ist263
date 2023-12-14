@@ -1,0 +1,144 @@
+.nav {
+    text-align: center;
+    padding: 50px;
+}
+.skip {
+    background-color: #ffbf00;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: -999px;
+}
+.skip:focus {
+    left: 10px;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: #ffffff;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+.dropdown-content a {
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content a:hover {background-color: #ddd;}
+.show {display: block;}
+
+
+body {
+    background-color: #c6d2e9;
+    font-family: sans-serif;
+    font-size: 20px;
+} 
+
+h1 {
+    text-align: center;
+}
+
+.iucnflex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.h2 {
+    color: #333333;
+    margin-top: 50px;
+}
+.IUCN {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.iucnexplain {
+    margin-top: 10x;
+}
+
+.iucnimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+
+.animal {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.animalimg {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333333;
+    margin-top: 40px;
+}
+p {
+    color: #555555;
+    margin-top: 10px;
+}
+
+.petitions {
+    color: #333333;
+    margin-top: 40px;
+}
+li {
+    max-width: 800px;
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+

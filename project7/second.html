@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style2.css">
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </head>
 <body>
     <nav class="nav">
+        <a href="#main" tabindex="1" class="skip">Skip to Content</a> <br>
+        <button onclick="myFunction()" class="dropbtn">Navigation</button>
+        <div id="myDropdown" class="dropdown-content">
         <a href="..//project7/index.html">Home</a>
         <a href="..//project7/second.html">You Have The Power To Make A Change!</a>
         <a href="..//project7/third.html">Wild Life Today</a>
+        </div>
     </nav>
-    <h1 class="title">You Have The Power To Make A Change!</h1>
+
+    <h1 id="main" class="title">You Have The Power To Make A Change!</h1>
    
     <div class="first">
         <div>
@@ -25,26 +47,28 @@
             Respect wild animals by keeping a safe space between you and them, never getting too close, and never taking them out of their natural habitat. Avoid handling young animals if you discover them, especially in the spring. <br>
         </div>
     </div>
-    <p>We have the authority and capability to slow this the rate of extinction in wildlife. We can reduce the rate of habitat deterioration, which is mostly caused by a decline in biological variety worldwide. Making even little improvements in our daily lives can make a huge difference.</p>
-    
-    <div>
-        <div><img src="..//images/cleanup.jpg" alt="clean up"></div>
-        <div>30,000 species per year are going extinct. The goal is simply to keep the human race at a level where there is enough clean food and water to survive.</div>
+
+    <div class="one">
+        <div class="cleanuptxt2">We have the authority and capability to slow this the rate of extinction in wildlife. We can reduce the rate of habitat deterioration, which is mostly caused by a decline in biological variety worldwide. Making even little improvements in our daily lives can make a huge difference.</div>
+        <div><img src="..//images/cleanup.jpg" alt="clean up" class="cleanupimg"></div>
+        <div class="cleanuptxt">30,000 species per year are going extinct. The goal is simply to keep the human race at a level where there is enough clean food and water to survive.</div>
     </div>
 
-    <div>
+    <div class="two">
         <div> <img src="..//images/nature.jpeg" alt="nature"> </div>
         <div>Create a Certified <a href="https://www.nwf.org/Garden-For-Wildlife/Certify">Wildlife Habitat</a> in your garden or balcony to aid in the migration of birds and butterflies. Learn how to provide migratory birds the rest and food they need to get where they're going.</div>
     </div>
 
     <h1>SAY NO TO ANIMAL TESTING PRODUCTS</h1>
-    <div>
-        <div>A scientific experiment or test that forces a live animal to endure something that is likely to cause them pain, suffering, discomfort, or long-term harm is considered an animal test. According to estimates, around 110 million animals are killed in the United States each year for experimentation.</div>
+    
+    <div class="animaltest1">
+        <div>What is animal testing? <br> A scientific experiment or test that forces a live animal to endure something that is likely to cause them pain, suffering, discomfort, or long-term harm is considered an animal test. According to estimates, around 110 million animals are killed in the United States each year for experimentation.</div>
         <div> <img src="..//images/dogfirstpage.jpeg" alt="dog"> </div>
     </div>
     <p>Nearly 60,000 dogs are used for “research, testing, teaching, or experimentation” each year. Despite the fact that chimpanzees are no longer used in research by the scientific community, a recent government study found that almost 71,000 macaques, baboons, marmosets, and other primates are utilized each year, with tens of thousands more being bred and kept in reserve.</p>
-    <div>
-        <div>Products that use animal testing: <br>
+    
+    <div class="goodbadproducts">
+        <div class="badproduct">Products that use animal testing: <br>
             1. Windex <br>
             2. Post-it notes <br>
             3. Mars Candy <br>
@@ -54,8 +78,8 @@
             8. L’Oréal <br>
             9. Tide <br>
             10. Bounce </div>
-        <div> <img src="..//images/animaltesting.png" alt="animal testing"> </div>
-        <div>Products that don’t use animal testing <br>
+        <div> <img src="..//images/animaltesting.png" class="animaltstimg" alt="animal testing"> </div>
+        <div class="goodproduct">Products that don’t use animal testing <br>
             1. Trader Joes <br>
             2. Huda Beauty <br>
             3. Clean well <br>

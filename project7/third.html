@@ -4,60 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 </head>
 <body>
     <nav class="nav">
+        <a href="#main" tabindex="1" class="skip">Skip to Content</a> <br>
+        <button onclick="myFunction()" class="dropbtn">Navigation</button>
+        <div id="myDropdown" class="dropdown-content">
         <a href="..//project7/index.html">Home</a>
         <a href="..//project7/second.html">You Have The Power To Make A Change!</a>
         <a href="..//project7/third.html">Wild Life Today</a>
+        </div>
     </nav>
-<h1>
+<h1 id="main">
     Wild Life Today!
 </h1>
-<h2>Animals on the IUCN Red List</h2>
-<div>
-    <div>What is the IUCN Red List?</div>
-    <div>The International Union for Conservation of Nature's Red List of Threatened Species has evolved to become the world's most comprehensive information source on the global conservation status of animal, fungi and plant species</div>
-</div>
-<img src="..//images/IUCN_-_Red_List_-_Categories.png" alt="IUCN Red List">
 
-<div>
-    <div>
-        Polar Bears: <br>
-        Polar bears are classified as vulnerable on the IUCN red list. In an Environment which is changing, polar bears face several difficulties. Since polar bears depend on sea ice to hunt seals, mate, and migrate, sea ice loss brought on by global warming is their biggest threat. Other dangers include disturbances to dens, commerce, conflicts with humans and polar bears, and pollution.
-    </div>
-    <div> <img src="..//images/polar-bears-wildlife-snow-nature-preview.jpg" alt="polar bear"> </div>
+<div class="iucnflex">
+<h2>What is the IUCN Red List?</h2>
+<div class="IUCN">
+    <div class="iucnexplain">The International Union for Conservation of Nature's Red List of Threatened Species has evolved to become the world's most comprehensive information source on the global conservation status of animal, fungi and plant species</div>
+</div>
 </div>
 
-<div>
-    <div>
-        Gorillas: <br>
-        Gorillas are incredible creatures that have 98.3% of our DNA in common. They are able to experience emotions just like we do, and they occasionally act just like us. There are two subspecies of the gorilla, the eastern and western. On the IUCN Red List of Threatened Species, three of the four are classified as Critically Endangered. The Mountain Gorilla, a subspecies of the Eastern Gorilla, which is regarded as Endangered, is the only one that isn’t.</div>
-    <div> <img src="..//images/gorilla.jpg" alt="gorilla"> </div>
+<img src="..//images/IUCN_-_Red_List_-_Categories.png" class="iucnimg" alt="IUCN Red List">
+
+<div class="animal">
+    <h2>Polar Bears</h2>
+    <img src="../images/polar-bears-wildlife-snow-nature-preview.jpg" class="animalimg" alt="polar bear">
+    <p>
+        Polar bears are classified as vulnerable on the IUCN red list. In an environment that is changing, polar bears face several difficulties. Since polar bears depend on sea ice to hunt seals, mate, and migrate, sea ice loss brought on by global warming is their biggest threat. Other dangers include disturbances to dens, commerce, conflicts with humans and polar bears, and pollution.
+    </p>
 </div>
 
-<div>
-    <div>
-        Tigers: <br>
-        Tigers are listed as endangered on the IUCN Red List. An estimated 95% of the historical range of tigers has been gone. Human activities have damaged, fractured, and destroyed their environment. Tiger habitats are seriously threatened by the removal of forests for agriculture and logging, as well as by the construction of road networks and other development projects.The biggest threat to wild tigers right now is poaching. In illegal wildlife marketplaces, tigers' entire bodies, from whiskers to tails, have been discovered.</div>
-    <div> <img src="..//images/tigers.jpeg" alt="tiger"> </div>
+<div class="animal">
+    <h2>Gorillas</h2>
+    <img src="../images/gorilla.jpg" class="animalimg" alt="gorilla">
+    <p>
+        Gorillas are incredible creatures that have 98.3% of our DNA in common. They are able to experience emotions just like we do, and they occasionally act just like us. There are two subspecies of the gorilla, the eastern and western. On the IUCN Red List of Threatened Species, three of the four are classified as Critically Endangered. The Mountain Gorilla, a subspecies of the Eastern Gorilla, which is regarded as Endangered, is the only one that isn’t.
+    </p>
 </div>
 
-<div>
-    <div>
-        Fin Whale: <br>
-        Fin Whales are considered Vulnerable on the IUCN lRed List. Fin whales in the North Atlantic are classified as endangered because they were used as food, baleen, and fuel by commercial whalers up to the 20th century. As a result, certain populations are doing better. Fin whales, like other large whales, are in danger from environmental changes such habitat loss, toxins, and climate change. </div>
-    <div> <img src="..//images/finwhale.jpeg" alt="fin whale"> </div>
+<div class="animal">
+    <h2>Tigers</h2>
+    <img src="../images/tigers.jpeg" class="animalimg" alt="tiger">
+    <p>
+        Tigers are listed as endangered on the IUCN Red List. An estimated 95% of the historical range of tigers has been gone. Human activities have damaged, fractured, and destroyed their environment. Tiger habitats are seriously threatened by the removal of forests for agriculture and logging, as well as by the construction of road networks and other development projects. The biggest threat to wild tigers right now is poaching. In illegal wildlife marketplaces, tigers' entire bodies, from whiskers to tails, have been discovered.
+    </p>
 </div>
 
-<div>
-    <div>
-        Sea Otters: <br>
-        Sea otters are classifies as endangered on the red list. Although the sea otter population has increased since these animals became protected, its geographic range has not expanded to match. The main danger to sea otter populations is humans. Sea otters are negatively impacted by direct human interaction, such as shootings, boat collisions, and entanglements in fishing gear, but the biggest dangers come from oil spills, pollution, disease, and kelp loss.</div>
-    <div> <img src="..//images/seaotters.jpeg" alt="sea otter"> </div>
+<div class="animal">
+    <h2>Fin Whale</h2>
+    <img src="../images/finwhale.jpeg" class="animalimg" alt="fin whale">
+    <p>
+        Fin Whales are considered Vulnerable on the IUCN Red List. Fin whales in the North Atlantic are classified as endangered because they were used as food, baleen, and fuel by commercial whalers up to the 20th century. As a result, certain populations are doing better. Fin whales, like other large whales, are in danger from environmental changes such habitat loss, toxins, and climate change.
+    </p>
 </div>
 
-<h2>Sign petitions today and help the wildlife!</h2>
+<div class="animal">
+    <h2>Sea Otters</h2>
+    <img src="../images/seaotters.jpeg" class="animalimg" alt="sea otter">
+    <p>
+        Sea otters are classified as endangered on the red list. Although the sea otter population has increased since these animals became protected, its geographic range has not expanded to match. The main danger to sea otter populations is humans. Sea otters are negatively impacted by direct human interaction, such as shootings, boat collisions, and entanglements in fishing gear, but the biggest dangers come from oil spills, pollution, disease, and kelp loss.
+    </p>
+</div>
+
+<h2 class="petitions">Sign petitions today and help the wildlife!</h2>
 <ul>
     <li>This petition is crucial because it aids in both the preservation of the last remaining forests from urbanization and the restoration of damaged forests to a more wild and natural state.
     
