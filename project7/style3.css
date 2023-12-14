@@ -16,7 +16,7 @@
 }
 
 .dropbtn {
-    background-color: #3498DB;
+    background-color: #161819;
     color: #ffffff;
     padding: 20px;
     border: none;
@@ -24,7 +24,7 @@
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: #26579c;
 }
 .dropdown {
     position: relative; 
@@ -45,9 +45,8 @@
     text-decoration: none;
     display: block;
   }
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #dddddd;}
 .show {display: block;}
-
 
 body {
     background-color: #c6d2e9;
@@ -70,7 +69,7 @@ h1 {
     margin-top: 50px;
 }
 .IUCN {
-    max-width: 600px;
+    max-width: 1000px;
     margin: auto;
     background-color: #ffffff;
     padding: 30px;
@@ -96,7 +95,7 @@ h1 {
 .animal {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     background-color: #ffffff;
     padding: 20px;
@@ -125,7 +124,7 @@ p {
     margin-top: 40px;
 }
 li {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px;
     background-color: #ffffff;
     padding: 20px;
@@ -136,9 +135,6 @@ li {
 a {
     color: #007BFF;
     text-decoration: none;
-    font-weight: bold;
 }
-a:hover {
-    text-decoration: underline;
-}
+
 

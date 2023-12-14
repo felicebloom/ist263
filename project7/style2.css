@@ -17,7 +17,7 @@
 
 
 .dropbtn {
-    background-color: #3498DB;
+    background-color: #161819;
     color: #ffffff;
     padding: 20px;
     border: none;
@@ -25,7 +25,7 @@
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: #26579c;
 }
 .dropdown {
     position: relative; 
@@ -46,7 +46,7 @@
     text-decoration: none;
     display: block;
   }
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #dddddd;}
 .show {display: block;}
 
 body {
@@ -197,37 +197,33 @@ p {
 /* end of this section */
 
 .goodbadproducts {
-    max-width: 800;
-    margin: 50px;
+    max-width: 800px;
+    margin: 50px auto;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
-.badproducts  {
+.badproduct  {
     flex: 1;
     margin: 20px;
 }
 
-.goodproduct {
+.goodproduct, .badproduct{
     margin-bottom: 10px;
-    color: #333333;
 }
 
 .animaltstimg {
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
 @media only screen and (max-width: 600px) {
-    .badproducts {
+    .badproduct, .goodproduct {
         margin: 20px; 
     }
-    .goodbadproducts {
-        flex-direction: row;
-    }
-
-    }
+}

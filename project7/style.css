@@ -1,8 +1,10 @@
+
  
  .nav {
     text-align: center;
     padding: 50px;
 }
+
 .skip {
     background-color: #ffbf00;
     padding: 5px;
@@ -18,13 +20,19 @@
 
 body {
     background-color: #c6d2e9;
-    font-family: sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
     font-size: 20px;
 
 } 
 
 @media only screen and (max-width: 800px) {
-    .titleimg {float: none;}
+    .centerP {
+        flex-direction: column;
+    }
     .bottom {
         text-align: center;
         flex-direction: column; /* Stack elements vertically on smaller screens */
@@ -37,7 +45,8 @@ body {
         margin-right: 20px;
     }
     .img2 {
-        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
     }
     .two {
         display: block;
@@ -46,7 +55,7 @@ body {
 
 
 .dropbtn {
-    background-color: #3498DB;
+    background-color: #161819;
     color: #ffffff;
     padding: 20px;
     border: none;
@@ -54,7 +63,7 @@ body {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: #26579c;
 }
 .dropdown {
     position: relative; 
@@ -75,7 +84,7 @@ body {
     text-decoration: none;
     display: block;
   }
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #dddddd;}
 .show {display: block;}
 
 /* this is my title and banner */
@@ -92,28 +101,29 @@ body {
     color: #333333;
 }
 .titleimg {
-    max-width: 100%; flex-wrap: wrap;
+    max-width: 100%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.centerpflex {
-    display: flex;
+
+.centerptext {
+    flex: 1;
 }
 .centerP {
-    flex: 1;
     padding: 30px;
     border: 2px solid #000000;
-    background-color: #72b9b9;
-    color: #ffffff;
+    background-color: #858ead;
     margin: 10px;
-
+    display: flex;
 }
 
 .steps {
     flex: 1;
     padding: 30px;
     border: 2px solid #000000;
-    background-color: #72b9b9;
-    color: #ffffff;
+    background-color: #858ead;
     margin: 10px;
 }
 
@@ -137,6 +147,9 @@ body {
     flex: 1;
     max-width: 300px;
     border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .img2 {
     padding: 20px;

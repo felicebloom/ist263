@@ -6,21 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="style2.css">
 <script>
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
+      function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+          }
+        }
       }
     }
-  }
-}
 </script>
 </head>
 <body>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="two">
-        <div> <img src="..//images/nature.jpeg" alt="nature"> </div>
+        <div> <img src="..//images/nature.jpeg" class="nature" alt="nature"> </div>
         <div>Create a Certified <a href="https://www.nwf.org/Garden-For-Wildlife/Certify">Wildlife Habitat</a> in your garden or balcony to aid in the migration of birds and butterflies. Learn how to provide migratory birds the rest and food they need to get where they're going.</div>
     </div>
 
@@ -69,25 +69,29 @@
     
     <div class="goodbadproducts">
         <div class="badproduct">Products that use animal testing: <br>
-            1. Windex <br>
-            2. Post-it notes <br>
-            3. Mars Candy <br>
-            5. Kleenex <br> 
-            6. Vaseline <br> 
-            7. Old spice <br>
-            8. L’Oréal <br>
-            9. Tide <br>
-            10. Bounce </div>
+            <ol>
+                <li>Windex</li>
+                <li>Post-it notes </li>
+                <li>Mars Candy</li> 
+                <li>Kleenex</li>
+                <li>Vaseline </li>
+                <li>Old spice</li> 
+                <li>L’Oréal</li>  
+                <li>Tide</li> 
+                <li>Bounce</li>
+            </ol>
         <div> <img src="..//images/animaltesting.png" class="animaltstimg" alt="animal testing"> </div>
         <div class="goodproduct">Products that don’t use animal testing <br>
-            1. Trader Joes <br>
-            2. Huda Beauty <br>
-            3. Clean well <br>
-            4. Garnier <br> 
-            5. Method <br> 
-            6. Dial <br> 
-            7. St. ives <br> 
-            8. Burts Bees</div>
+            <ol>
+                <li>Trader Joes </li>
+                <li>Huda Beauty</li> 
+                <li>Clean well </li>
+                <li>Garnier </li>
+                <li>Method</li> 
+                <li>Dial</li>  
+                <li>St. ives</li> 
+                <li>Burts Bees</li>
+            </ol>
     </div>
 </body>
 </html>
