@@ -50,7 +50,13 @@
 
 body {
     background-color: #c6d2e9;
-    font-family: sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Rethink Sans', sans-serif;
     font-size: 20px;
 } 
 
