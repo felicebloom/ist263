@@ -129,6 +129,8 @@ p {
     color: #333333;
     margin-top: 40px;
 }
+
+
 li {
     max-width: 1000px;
     margin: 20px;
@@ -139,7 +141,8 @@ li {
 }
 
 a {
-    color: #007BFF;
+    color: #6d1e22a5;
+    font-weight: bold;
     text-decoration: none;
 }
 
