@@ -63,6 +63,11 @@ body {
 
 .title {
     text-align: center;
+    justify-content: space-between;
+    background-color: #8dabb469;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    margin: 10px;
 }
 
 .first {
