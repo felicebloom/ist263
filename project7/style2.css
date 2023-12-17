@@ -83,7 +83,17 @@ body {
     width: 500px;
     height: auto;
     border-radius: 8px;
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out;
 }
+
+.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
 .reducetext {
     max-width: 600px;
     padding: 30px; 

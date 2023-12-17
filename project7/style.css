@@ -107,6 +107,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out;
 }
 
 
@@ -119,6 +121,11 @@ body {
     background-color: #858ead;
     margin: 10px;
     display: flex;
+}
+
+.slide-in {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .steps {
